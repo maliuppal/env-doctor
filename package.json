@@ -1,6 +1,6 @@
 {
   "name": "@ali.uppal/env-doctor",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "author": "Muhammad Ali <maliuppal@users.noreply.github.com> (https://github.com/maliuppal)",
   "repository": {
     "type": "git",
@@ -68,10 +68,10 @@
     "devops"
   ],
   "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@vitest/coverage-v8": "^2.1.8",
     "tsup": "^8.3.5",
     "typescript": "~5.7.2",
-    "@types/node": "^22.10.2",
-    "vitest": "^2.1.8",
-    "@vitest/coverage-v8": "^2.1.8"
+    "vitest": "^2.1.8"
   }
 }
