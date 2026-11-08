@@ -1,0 +1,77 @@
+{
+  "name": "@ali.uppal/env-doctor",
+  "version": "0.2.0",
+  "author": "Muhammad Ali <maliuppal@users.noreply.github.com> (https://github.com/maliuppal)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maliuppal/env-doctor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maliuppal/env-doctor/issues"
+  },
+  "homepage": "https://github.com/maliuppal/env-doctor#readme",
+  "description": "Keep .env.example in sync with code: missing/unused env vars, Vite import.meta.env, CI fail-on, --suggest—zero dependencies",
+  "license": "MIT",
+  "sideEffects": false,
+  "type": "module",
+  "bin": {
+    "env-doctor": "./dist/cli.cjs"
+  },
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run --coverage",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src test"
+  },
+  "keywords": [
+    "env-doctor",
+    "env",
+    "dotenv",
+    "environment-variables",
+    "env-example",
+    "env-sync",
+    "env-sample",
+    "vite",
+    "import-meta-env",
+    "process-env",
+    "twelve-factor",
+    "github-actions",
+    "ci",
+    "pre-commit",
+    "cli",
+    "typescript",
+    "node",
+    "onboarding",
+    "devops"
+  ],
+  "devDependencies": {
+    "tsup": "^8.3.5",
+    "typescript": "~5.7.2",
+    "@types/node": "^22.10.2",
+    "vitest": "^2.1.8",
+    "@vitest/coverage-v8": "^2.1.8"
+  }
+}
